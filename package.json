@@ -1,0 +1,29 @@
+{
+  "name": "caterease-student-jobs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"node server/index.mjs\" \"vite --host 127.0.0.1\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/run-prod.mjs",
+    "make-admin": "node server/make-admin.mjs",
+    "test": "node --test server/*.test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.575.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.16",
+    "@tailwindcss/vite": "^4.1.16",
+    "concurrently": "^9.2.1"
+  }
+}
